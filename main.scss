@@ -1,0 +1,32 @@
+.main-page-categories {
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    o-column-width: 150px;
+    -ms-column-width: 150px;
+    column-width: 150px;
+    &__block {
+        display: inline-flex;
+        flex-direction: column;
+        padding: 10px;
+        @media only screen and (max-width: 400px) {
+            margin-left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+    &__name {
+        color: #105cb6;
+        text-decoration: none;
+        font-size: 14px;
+        font: 14px Roboto;
+        &_subcat {
+            margin-left: 20px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
